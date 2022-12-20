@@ -1,0 +1,13 @@
+package com.abhi.phonebook.service;
+
+import java.util.List;
+
+import com.abhi.phonebook.model.PhoneBook;
+import com.abhi.phonebook.model.Report;
+
+public interface ReportService {
+	public List<Report> getAllReportData(String planName, String planStatus);
+	public List<Report> downloadPDF();
+	public List<Report> downloadExcel();
+
+}
